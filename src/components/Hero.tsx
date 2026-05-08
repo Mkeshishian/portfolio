@@ -102,7 +102,7 @@ export default function Hero() {
               ].map((s) => (
                 <div
                   key={s.l}
-                  className="bg-deep/40 p-5 backdrop-blur-md"
+                  className="bg-deep/70 p-5"
                 >
                   <div className="font-display text-3xl md:text-4xl font-medium text-neon">
                     {s.v}

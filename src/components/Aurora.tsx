@@ -4,18 +4,17 @@ export default function Aurora() {
       <div className="absolute inset-0 bg-ink" />
 
       <div
-        className="absolute -top-1/4 -left-1/4 w-[80vw] h-[80vw] rounded-full blur-[80px] opacity-20 animate-aurora will-change-transform"
+        className="absolute -top-1/4 -left-1/4 w-[80vw] h-[80vw] rounded-full opacity-20"
         style={{
           background:
             "radial-gradient(circle, rgba(0,240,200,0.4) 0%, transparent 60%)",
         }}
       />
       <div
-        className="absolute -bottom-1/4 right-1/4 w-[60vw] h-[60vw] rounded-full blur-[80px] opacity-15 animate-aurora will-change-transform"
+        className="absolute -bottom-1/4 right-1/4 w-[60vw] h-[60vw] rounded-full opacity-15"
         style={{
           background:
             "radial-gradient(circle, rgba(167,139,250,0.4) 0%, transparent 60%)",
-          animationDelay: "-12s",
         }}
       />
 

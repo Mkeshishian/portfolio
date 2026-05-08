@@ -40,7 +40,7 @@ export default function Contact() {
                   href={link.href}
                   target={link.href.startsWith("http") ? "_blank" : undefined}
                   rel="noreferrer"
-                  className="bg-deep/40 backdrop-blur-md p-8 group hover:bg-neon hover:text-ink transition-colors flex items-center justify-between"
+                  className="bg-deep/70 p-8 group hover:bg-neon hover:text-ink transition-colors flex items-center justify-between"
                 >
                   <div>
                     <div className="font-mono text-xs uppercase tracking-widest text-neon group-hover:text-ink mb-2">

@@ -37,7 +37,7 @@
   }
 
   .glass {
-    @apply bg-deep/60 backdrop-blur-xl border border-bone/10;
+    @apply bg-deep/80 border border-bone/10;
   }
 
   .neon-text {
@@ -61,6 +61,16 @@
   .particle-fade {
     animation: particleFade 0.8s ease-out forwards;
     will-change: opacity, transform;
+  }
+
+  .cursor-particle {
+    position: absolute;
+    border-radius: 9999px;
+    background-color: #00f0c8;
+    box-shadow: 0 0 8px rgba(0, 240, 200, 0.7);
+    animation: particleFade 0.8s ease-out forwards;
+    will-change: opacity, transform;
+    pointer-events: none;
   }
 }
 

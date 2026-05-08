@@ -102,7 +102,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: i * 0.05 }}
-              className="bg-deep/40 backdrop-blur-md p-6 md:p-8 hover:bg-neon hover:text-ink transition-colors duration-300 group"
+              className="bg-deep/70 p-6 md:p-8 hover:bg-neon hover:text-ink transition-colors duration-300 group"
             >
               <div className="font-mono text-xs uppercase tracking-widest text-neon group-hover:text-ink mb-4">
                 {group.label}

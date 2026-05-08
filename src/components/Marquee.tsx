@@ -19,7 +19,7 @@ const tools = [
 
 export default function Marquee() {
   return (
-    <div className="relative overflow-hidden border-y border-bone/10 bg-deep/40 backdrop-blur-md py-6 select-none">
+    <div className="relative overflow-hidden border-y border-bone/10 bg-deep/70 py-6 select-none">
       <div className="marquee-track whitespace-nowrap">
         {[...tools, ...tools].map((tool, i) => (
           <span
