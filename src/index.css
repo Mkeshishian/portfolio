@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink text-bone font-sans antialiased;
+  }
+
+  ::selection {
+    background-color: rgba(0, 240, 200, 0.4);
+    color: #e8eef5;
+  }
+
+}
+
+@layer components {
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 40s linear infinite;
+  }
+
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s ease;
+  }
+  .link-underline:hover {
+    background-size: 100% 1px;
+  }
+
+  .glass {
+    @apply bg-deep/60 backdrop-blur-xl border border-bone/10;
+  }
+
+  .neon-text {
+    text-shadow: 0 0 24px rgba(0, 240, 200, 0.4);
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(232, 238, 245, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(232, 238, 245, 0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .star-twinkle {
+    animation-name: starTwinkle;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    will-change: opacity;
+  }
+
+  .particle-fade {
+    animation: particleFade 0.8s ease-out forwards;
+    will-change: opacity, transform;
+  }
+}
+
+@keyframes starTwinkle {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+
+@keyframes particleFade {
+  0% {
+    opacity: 0.9;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.4);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #05070d;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00f0c8;
+}
